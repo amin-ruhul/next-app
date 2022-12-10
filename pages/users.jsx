@@ -3,7 +3,7 @@ import axios from "axios";
 import { useSelector } from "react-redux";
 import { fetchUser } from "../api/user";
 
-function users({ data }) {
+function Users({ data }) {
   const usersData = useSelector((state) => state.user.users);
 
   useEffect(() => {
@@ -32,4 +32,4 @@ export async function getStaticProps() {
   };
 }
 
-export default users;
+export default Users;

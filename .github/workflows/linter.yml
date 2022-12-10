@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   Lint:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Lint Code Base
         uses: github/super-linter@v4
